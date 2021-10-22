@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body header {
+  position: absolute;
+  right: 70px;
+  top: 40px;
+  z-index: 999;
+}
+
+body header nav ul li {
+  list-style: none;
+}
+
+body header nav ul li a {
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  background: white;
+  border-radius: 0.4rem;
+  padding: 0.3rem 1rem;
+  -webkit-box-shadow: 2px 3px 10px #00000090;
+          box-shadow: 2px 3px 10px #00000090;
+}
+
+body header nav ul li a:hover {
+  color: #333;
+  background-color: #dedede;
+}
+
+body main {
+  background-image: url("../img/Fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  min-width: 100%;
+  overflow-y: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .logo {
+  width: 100%;
+  max-width: 550px;
+  z-index: 3;
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+}
+
+body main .logo img:first-child {
+  position: absolute;
+  top: -5.35rem;
+  left: 0;
+  width: auto;
+  height: 145px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0;
+  -webkit-transform: scale(0) translateY(-60px);
+          transform: scale(0) translateY(-60px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body main .logo img:first-child.activo {
+  opacity: 1;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+}
+
+body main .logo img:nth-child(2) {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0;
+  -webkit-transform: scale(0) translateY(-45px);
+          transform: scale(0) translateY(-45px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body main .logo img:nth-child(2).activo {
+  opacity: 1;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+}
+
+body main .overlay {
+  background-color: #00000085;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+body footer {
+  position: absolute;
+  bottom: 5rem;
+  width: 100%;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  text-align: center;
+}
+
+body footer .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .social ul li {
+  list-style: none;
+  margin-right: 1.2rem;
+}
+
+body footer .social ul li a {
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body footer .social ul li a:hover {
+  background-color: #333;
+}
+
+body footer .social ul li a:hover i {
+  color: #fff;
+}
+
+body footer .social ul li a i {
+  font-size: 1.5rem;
+  color: #333;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body footer .direccion {
+  padding-top: 1.5rem;
+}
+
+body footer .direccion a {
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+}
+
+body footer .direccion a h2 {
+  color: #fff;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 720px) and (min-width: 310px) {
+  body main .logo {
+    width: 350px;
+    max-width: 100%;
+  }
+  body main .logo img:first-child {
+    width: auto;
+    height: 100px;
+    left: 0rem;
+  }
+  body main .logo img:nth-child(2) {
+    width: 100%;
+    height: 200px;
+  }
+  body footer {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

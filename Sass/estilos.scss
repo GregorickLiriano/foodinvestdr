@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  header {
+    position: absolute;
+    right: 70px;
+    top: 40px;
+    z-index: 999;
+    nav {
+      ul {
+        li {
+          list-style: none;
+          a {
+            color: #333;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.5s;
+            font-family: "Rubik", sans-serif;
+            font-size: 1.2rem;
+            background: white;
+            border-radius: 0.4rem;
+            padding: 0.3rem 1rem;
+            box-shadow: 2px 3px 10px #00000090;
+            &:hover {
+              color: #333;
+              background-color: #dedede;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    background-image: url("../img/Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    min-width: 100%;
+    overflow-y: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .logo {
+      width: 100%;
+      max-width: 550px;
+      z-index: 3;
+      position: relative;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      transform: translateY(-3rem);
+      img {
+        &:first-child {
+          position: absolute;
+          top: -5.35rem;
+          left: 0;
+          width: auto;
+          height: 145px;
+          object-fit: contain;
+          opacity: 0;
+          transform: scale(0) translateY(-60px);
+          transition: 0.8s;
+          &.activo {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+        &:nth-child(2) {
+          width: 100%;
+          height: 300px;
+          object-fit: contain;
+          opacity: 0;
+          transform: scale(0) translateY(-45px);
+          transition: 0.8s;
+          &.activo {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+      }
+    }
+    .overlay {
+      background-color: #00000085;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    text-align: center;
+    .social {
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          list-style: none;
+          margin-right: 1.2rem;
+          a {
+            height: 40px;
+            width: 40px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: 0.5s;
+            &:hover {
+              background-color: #333;
+              i {
+                color: #fff;
+              }
+            }
+            i {
+              font-size: 1.5rem;
+              color: #333;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+    .direccion {
+      padding-top: 1.5rem;
+      a {
+        text-decoration: none;
+        -webkit-text-decoration: none;
+        -moz-text-decoration: none;
+        h2 {
+          color: #fff;
+          letter-spacing: 0.25rem;
+          text-transform: uppercase;
+          font-size: 1rem;
+          font-family: "Rubik", sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) and (min-width: 310px) {
+  body {
+    main {
+      .logo {
+        width: 350px;
+        max-width: 100%;
+        img {
+          &:first-child {
+            width: auto;
+            height: 100px;
+            left: 0rem;
+          }
+          &:nth-child(2) {
+            width: 100%;
+            height: 200px;
+          }
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      padding: 0 0.5rem;
+    }
+  }
+}
