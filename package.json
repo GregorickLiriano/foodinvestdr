@@ -1,0 +1,25 @@
+{
+  "name": "food",
+  "version": "1.0.1",
+  "description": "restaurant",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gh -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregorickLiriano/foodinvestdr.git"
+  },
+  "keywords": [
+    "food"
+  ],
+  "author": "Gregorick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregorickLiriano/foodinvestdr/issues"
+  },
+  "homepage": "https://github.com/GregorickLiriano/foodinvestdr#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
