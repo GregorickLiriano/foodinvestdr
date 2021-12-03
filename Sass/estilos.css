@@ -28,6 +28,7 @@ body header nav ul li {
 
 body header nav ul li a {
   text-transform: uppercase;
+  color: #fff;
 }
 
 body header nav ul li:last-child {
@@ -83,6 +84,7 @@ body main .titulo h1 {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  font-size: 4rem;
 }
 
 body main .overlay {

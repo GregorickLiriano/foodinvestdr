@@ -26,6 +26,7 @@ body {
           padding-right: 20px;
           a {
             text-transform: uppercase;
+            color: #fff;
           }
           &:last-child {
             color: #333;
@@ -71,6 +72,7 @@ body {
         text-transform: uppercase;
         font-family: "Poppins", sans-serif;
         font-weight: bold;
+        font-size: 4rem;
       }
     }
     .overlay {
