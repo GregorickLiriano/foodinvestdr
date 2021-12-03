@@ -306,7 +306,7 @@ body footer .direccion a h2 {
   font-weight: 400;
 }
 
-@media screen and (max-width: 720px) and (min-width: 310px) {
+@media screen and (max-width: 800px) and (min-width: 310px) {
   body main .titulo h1 {
     font-size: 2.2rem;
   }
