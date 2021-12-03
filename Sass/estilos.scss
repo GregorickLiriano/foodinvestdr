@@ -246,6 +246,11 @@ body {
 @media screen and (max-width: 720px) and (min-width: 310px) {
   body {
     main {
+      .titulo {
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
       .logo {
         width: 350px;
         max-width: 100%;
@@ -260,6 +265,11 @@ body {
             height: 200px;
           }
         }
+      }
+    }
+    section.restaurantes {
+      .galeria {
+        grid-template-columns: repeat(1, 1fr);
       }
     }
     footer {
