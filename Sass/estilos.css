@@ -129,11 +129,13 @@ body section.restaurantes .texto {
   text-align: left;
   border: 1px dashed #55555535;
   padding: 2.5rem;
+  height: 100%;
 }
 
 body section.restaurantes .texto p {
   color: #333;
   text-align: justify;
+  font-size: 1.15rem;
 }
 
 body section.restaurantes .texto p strong {
