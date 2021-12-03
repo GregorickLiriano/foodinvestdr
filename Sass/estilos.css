@@ -47,7 +47,8 @@ body header nav ul li:last-child {
 body header nav ul li:last-child a {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
-  color: red !important;
+  color: #fb0b0b !important;
+  font-weight: bold;
 }
 
 body main {
