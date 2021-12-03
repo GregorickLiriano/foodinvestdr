@@ -17,32 +17,173 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="Sass/estilos.css" />
     <title>Food Invest DR</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a download="Central Menu" href="pdf/CENTRAL MENU 3-01.pdf">MENU</a>
-          </li>
-        </ul>
+      <!-- menu -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/central-pagina-Log-1.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse justify-content-end navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#restaurantes">Restaurantes</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  download="Central Menu"
+                  href="pdf/CENTRAL MENU 3-01.pdf"
+                  >MENU</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      <!-- logo -->
-      <div class="logo">
-        <img
-          id="paloma"
-          class="paloma"
-          src="img/paloma-logo.png"
-          alt="Central | logotipo paloma"
-        />
-        <img id="logo" src="img/logo-v2.png" alt="Central | Composición logo" />
+      <div class="titulo">
+        <h1>el camino del buen comer solamente</h1>
       </div>
       <div class="overlay"></div>
     </main>
+    <section id="nosotros" class="sobre_nosotros">
+      <div class="container">
+        <div class="titulo">
+          <h2><span>Sobre</span> nosotros</h2>
+        </div>
+        <div class="texto">
+          <p>
+            <strong>Food invest</strong> es un grupo culinario que inició en el
+            2018 con la apertura de nuestro primer restaurante Central
+            Gastronómica.
+          </p>
+          <p>
+            La meta desde nuestra creación siempre ha sido la misma: Crear
+            experiencias culinarias que despierten los sentidos de nuestros
+            comensales. Nuestra pasión es el arte del buen comer.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="restaurantes" class="restaurantes">
+      <div class="container">
+        <div class="titulo">
+          <h2><span>Nuestros</span> Restaurantes</h2>
+          <p>Central | Caruso (coming soon) | Robata (coming soon)</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 col-md-12">
+            <div class="texto">
+              <p>
+                <strong class="text-uppercase">Central Gastronómica</strong>
+              </p>
+              <p>
+                Ubicado en el corazón de la ciudad de Santo Domingo, Central
+                abrió sus puertas en enero del 2018.
+              </p>
+              <p>
+                En CENTRAL GASTRONÓMICA, los comensales tienen la oportunidad
+                especial de disfrutar de un menú auténtico, original, inspirado
+                en las cocinas internacionales a cargo de nuestro Chef Ricardo
+                Abaud. El chef Ricardo logra crear un pasaporte a algunas de las
+                tradiciones culinarias más reconocidas del mundo, fusionando lo
+                mejor de la cocina Peruviana, Española, Italiana y Japonesa.
+              </p>
+              <p>
+                Ya sea en sus espacios perfectamente diseñados, o en su amplia
+                terraza, CENTRAL nos transporta a un tour culinario que es bueno
+                tanto para el cuerpo como para el alma. Llevamos la experiencia
+                gastronómica en Santo Domingo a otro nivel, con platos
+                memorables y un servicio de carácter internacional, que hacen de
+                nuestro restaurantes una de las principales referencias en
+                República Dominicana.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="texto">
+              <ul>
+                <li><strong>Ubicación</strong></li>
+                <li>
+                  Avenida Tiradentes No. 11 Ensanche Naco, Santo Domingo 10121
+                  Dominican Republic
+                </li>
+              </ul>
+              <ul>
+                <li><strong>Horario</strong></li>
+                <li>
+                  Domingo a Jueves <br />
+                  12:00pm - 12:00am
+                </li>
+                <li>
+                  Viernes y Sábados <br />
+                  12:00pm - 2:00am
+                </li>
+              </ul>
+              <ul>
+                <li><strong>Reservas:</strong></li>
+                <li>(809) 429-0000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="galeria">
+              <img src="img/Restaurantes/4A3A5966.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6046.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6051.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6056.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6068.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6071.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6079.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6099.jpg" alt="" />
+              <img src="img/Restaurantes//4A3A6101.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6105.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6115-2.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6115.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6152.jpg" alt="" />
+              <img src="img/Restaurantes/4A3A6251.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- FOOTER -->
     <footer>
       <!-- Social Links -->
@@ -69,5 +210,10 @@
     </footer>
   </body>
   <!-- assets -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
   <script src="js/main.js"></script>
 </html>

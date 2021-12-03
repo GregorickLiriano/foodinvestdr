@@ -3,9 +3,9 @@ var paloma = document.getElementById("paloma");
 
 // Animaciones intro logo
 
-setTimeout(() => {
-  logo.classList.add("activo");
-}, 300);
-setTimeout(() => {
-  paloma.classList.add("activo");
-}, 800);
+// setTimeout(() => {
+//   logo.classList.add("activo");
+// }, 300);
+// setTimeout(() => {
+//   paloma.classList.add("activo");
+// }, 800);

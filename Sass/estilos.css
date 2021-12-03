@@ -8,33 +8,46 @@
 
 body header {
   position: absolute;
-  right: 70px;
-  top: 40px;
-  z-index: 999;
+  z-index: 3;
+  width: 100%;
+  height: 90px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#00000080), to(transparent));
+  background: linear-gradient(to bottom, #000000, #00000080, transparent);
+}
+
+body header nav a.navbar-brand img {
+  width: auto;
+  height: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 body header nav ul li {
-  list-style: none;
+  padding-right: 20px;
 }
 
 body header nav ul li a {
+  text-transform: uppercase;
+}
+
+body header nav ul li:last-child {
   color: #333;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Rubik", sans-serif;
-  font-size: 1.2rem;
   background: white;
   border-radius: 0.4rem;
-  padding: 0.3rem 1rem;
   -webkit-box-shadow: 2px 3px 10px #00000090;
-          box-shadow: 2px 3px 10px #00000090;
+  box-shadow: 2px 3px 10px #00000090;
+  padding: 0rem 1rem;
 }
 
-body header nav ul li a:hover {
-  color: #333;
-  background-color: #dedede;
+body header nav ul li:last-child a {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: red !important;
 }
 
 body main {
@@ -58,63 +71,17 @@ body main {
           flex-direction: column;
 }
 
-body main .logo {
-  width: 100%;
-  max-width: 550px;
-  z-index: 3;
+body main .titulo {
   position: relative;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transform: translateY(-3rem);
-          transform: translateY(-3rem);
+  z-index: 4;
+  text-align: center;
 }
 
-body main .logo img:first-child {
-  position: absolute;
-  top: -5.35rem;
-  left: 0;
-  width: auto;
-  height: 145px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  opacity: 0;
-  -webkit-transform: scale(0) translateY(-60px);
-          transform: scale(0) translateY(-60px);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-body main .logo img:first-child.activo {
-  opacity: 1;
-  -webkit-transform: scale(1) translateY(0);
-          transform: scale(1) translateY(0);
-}
-
-body main .logo img:nth-child(2) {
-  width: 100%;
-  height: 300px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  opacity: 0;
-  -webkit-transform: scale(0) translateY(-45px);
-          transform: scale(0) translateY(-45px);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-body main .logo img:nth-child(2).activo {
-  opacity: 1;
-  -webkit-transform: scale(1) translateY(0);
-          transform: scale(1) translateY(0);
+body main .titulo h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 body main .overlay {
@@ -129,11 +96,128 @@ body main .overlay {
   z-index: 1;
 }
 
-body footer {
-  position: absolute;
-  bottom: 5rem;
+body section {
+  padding: 7rem 0;
+  background-color: #000000d6;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  text-align: center;
+  background-image: url(../img/Restaurantes/4A3A6079.jpg);
+}
+
+body section.restaurantes {
+  background: #dedede;
+}
+
+body section.restaurantes .titulo {
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+body section.restaurantes .titulo h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+body section.restaurantes .texto {
+  text-align: left;
+  border: 1px dashed #55555535;
+  padding: 2.5rem;
+}
+
+body section.restaurantes .texto p {
+  color: #333;
+  text-align: justify;
+}
+
+body section.restaurantes .texto p strong {
+  color: #000;
+}
+
+body section.restaurantes .texto ul {
+  text-align: left;
+  padding-bottom: 1.65rem;
+  padding-left: 0;
+  border-bottom: 1px solid #55555530;
+}
+
+body section.restaurantes .texto ul:last-child {
+  border-bottom: none;
+}
+
+body section.restaurantes .texto ul li {
+  list-style: none;
+  padding-bottom: 1.15rem;
+}
+
+body section.restaurantes .texto ul li strong {
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+body section.restaurantes .galeria {
+  padding: 2.5rem;
+  margin-top: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+body section.restaurantes .galeria img {
   width: 100%;
-  max-width: 600px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body section .titulo {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+body section .titulo h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body section .titulo h2 span {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+body section .texto p {
+  font-size: 1.25rem;
+  color: #dedede95;
+}
+
+body section .texto p strong {
+  color: #fff;
+}
+
+body footer {
+  position: relative;
+  width: 100%;
+  padding: 3rem 0;
+  background: #000;
+  max-width: 100%;
   width: 100%;
   margin: auto;
   display: -webkit-box;
